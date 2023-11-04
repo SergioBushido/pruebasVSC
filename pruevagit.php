@@ -6,10 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>tu vieja</h1>
-    <h2>tu super vieja</h2>
-    <h2>tu super vieja</h2>
-    <h2>tu super vieja</h2>
-    <h2>tu super vieja</h2>
+    <h1>Tu puta madre</h1>
 </body>
 </html>
