@@ -24,8 +24,8 @@ if (isset($_GET['enviar'])){
     $nom=$_GET['name'];
     $tel=$_GET['tel'];
     //Es un array multidimesnional 
-    $_SESSION['agenda'][]=array("nombre"=>$nom, "telefono"=>$tel);
-   
+    //$_SESSION['agenda'][]=array("nombre"=>$nom, "telefono"=>$tel);
+    $_SESSION['agenda'][]=["nombre"=>$nom, "telefono"=>$tel];
     
     if(isset($_SESSION['agenda']) && count($_SESSION['agenda']) > 0){
         echo '<fieldset class="campo">';
