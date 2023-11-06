@@ -25,7 +25,17 @@ if(isset($_POST['enviar'])){
     <title>Document</title>
 </head>
 <body>
-    <h1>tu vieja</h1>
-    <h2>tu super vieja</h2>
+
+    <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST">
+
+    Nombre: <input type="text" name="nom">
+    Apellidos: <input type="text" name="ape">
+
+    <input type="submit" name="enviar" value="enviar">
+    
+
+    </form>
+
+    
 </body>
 </html>
