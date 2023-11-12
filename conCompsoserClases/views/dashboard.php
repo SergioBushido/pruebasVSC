@@ -15,8 +15,14 @@ include '../Controllers/dashboardController.php';
     <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-md-8">
+                <?php
+                // Mostrar mensaje si está presente en la URL
+                if (isset($_GET['mensaje'])) {
+                    echo '<div class="alert alert-success" role="alert">' . $_GET['mensaje'] . '</div>';
+                }
+                ?>
                 <h2 class="text-dark">Bienvenido, <?php echo $_SESSION['usuario']; ?>!</h2>
-                <a href="../index.php" class="btn btn-danger">Cerrar sesión</a>
+                <a href="cerrarSession.php" class="btn btn-danger">Cerrar sesión</a>
                 <a href="inserta.php" class="btn btn-success">Insertar Producto</a>
 
                 <table class="table table-dark mt-3">
@@ -32,13 +38,13 @@ include '../Controllers/dashboardController.php';
                     </thead>
                     <tbody>
                         <?php
-                        
+
                         if ($resultado->rowCount() > 0) {
-                            
+
                             while ($fila = $resultado->fetch(PDO::FETCH_ASSOC)) {
-                           //Mismo resultado con foreach
-                           // $filas = $resultado->fetchAll(PDO::FETCH_ASSOC);
-                               //  foreach ($filas as $fila) {
+                                //Mismo resultado con foreach
+                                // $filas = $resultado->fetchAll(PDO::FETCH_ASSOC);
+                                //  foreach ($filas as $fila) {
                         ?>
                                 <tr>
                                     <td><?php echo $fila['Id']; ?></td>
@@ -58,7 +64,7 @@ include '../Controllers/dashboardController.php';
                             ?>
                             <tr>
                                 <td colspan="4">Sin resultados</td>
-                            </tr>                     
+                            </tr>
                         <?php
                         }
                         ?>

@@ -17,7 +17,8 @@ if (isset($_POST['actualizar'])) {
     $stmt->execute();
    
 
-    header("Location: dashboard.php");
+    header("Location: dashboard.php?mensaje=Producto+actualizado");
+    exit();
 }
 
 if (isset($_POST['volver'])) {

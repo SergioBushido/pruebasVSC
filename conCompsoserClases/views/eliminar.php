@@ -16,6 +16,7 @@ if (isset($_GET['id'])) {
     $stmt->bindParam(':id', $id, PDO::PARAM_INT);
     $stmt->execute();
 
-    header("Location: dashboard.php");
+    header("Location: dashboard.php?mensaje=Producto+eliminado");
+    exit();
 }
 ?>

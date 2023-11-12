@@ -28,7 +28,8 @@ if (isset($_POST['insertar'])) {
     $stmt->execute();
 
     // Redireccionar después de la inserción
-    header("Location: dashboard.php");
+    header("Location: dashboard.php?mensaje=Producto+insertado");
+    exit();
 }
 
 if(isset($_POST['volver'])){
