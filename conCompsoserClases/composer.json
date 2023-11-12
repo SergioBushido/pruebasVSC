@@ -1,0 +1,19 @@
+{
+    "name": "sergi/con-composer-clases",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sergi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "sergi",
+            "email": "sergio.ume@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": { 
+        "twbs/bootstrap": "dev-main",
+        "fortawesome/font-awesome": "dev-master"}
+}
