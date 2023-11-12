@@ -36,6 +36,14 @@ if(isset($_POST['enviar'])){
 
     </form>
 
+    <?php
+    $modulo='DWES';
+    print '<p>Módulo: $modulo</p>';
+    echo date("Y-m-d H:i:s");
+    phpinfo();
+?>
+
+
     
 </body>
 </html>

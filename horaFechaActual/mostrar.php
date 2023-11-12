@@ -23,8 +23,8 @@
     // Imprimir el mensaje
     echo "<p>Buenos días, son las $horaActual horas del día $diaActual del mes  $mesActual del año $anioActual.</p>";
     
+
     
-    /*
 //CON ESTO SE PONE EN ESPAÑOL
  // Establecer la zona horaria a Canarias
     date_default_timezone_set('Atlantic/Canary');
@@ -62,6 +62,21 @@
 
     // Imprimir el mensaje
     echo "<p>Buenos días, son las $horaActual horas del día $diaActual del mes de $nombreMes del año $anioActual.</p>";
-   */ ?>
+
+/////////////////////////////////////////////
+
+
+setlocale(LC_ALL, 'es_ES.UTF-8');
+    date_default_timezone_set('Atlantic/Canary');
+    $ahora=new DateTime();
+    $fecha = strftime("Hoy es %A, %d de %B de %Y y son las %H:%M:%S", date_timestamp_get($ahora));
+    echo $fecha;
+
+
+
+   ?>
+
+
+
 </body>
 </html>

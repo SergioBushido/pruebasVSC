@@ -1,0 +1,23 @@
+{
+    "name": "sergi/conexion-composer",
+    "type": "project",
+    "require": {
+        "php": "^8.2",
+        "thingengineer/mysqli-database-class": "dev-master",
+        "twbs/bootstrap": "dev-main",
+        "fortawesome/font-awesome": "dev-master"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sergi\\ConexionComposer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "sergi",
+            "email": "sergio.ume@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
