@@ -75,6 +75,12 @@ setlocale(LC_ALL, 'es_ES.UTF-8');
 
 
    ?>
+setlocale(LC_ALL, 'es_ES.UTF-8');
+    date_default_timezone_set('Atlantic/Canary');
+    $ahora=new DateTime();
+    $fecha = strftime("Hoy es %A, %d de %B de %Y y son las %H:%M:%S", date_timestamp_get($ahora));
+    echo $fecha;
+
 
 
 
